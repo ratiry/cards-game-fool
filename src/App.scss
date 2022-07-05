@@ -1,0 +1,80 @@
+
+@import './cmponents/sass-components/playing_cards.scss';
+@import './cmponents/sass-components/deck_container.scss';
+@import './cmponents/sass-components/lights_out.scss';
+@import './cmponents/sass-components/popups/popup.scss';
+@import './cmponents/sass-components/slides/welcoming.scss';
+@import './cmponents/sass-components/slides/opponents.scss';
+@import './cmponents/sass-components/for_js_work.scss';
+.cards_section{
+  display:flex;
+  flex-direction:row;
+  width :100vw;
+  height:100vh;
+  background-image:url(https://media.istockphoto.com/photos/empty-green-casino-poker-table-cloth-with-spotlight-picture-id1092139474?k=20&m=1092139474&s=612x612&w=0&h=iWwvolq21sBzJZkqmigkdwNW6_cuQ1pQSNQmBE0a4V0=);
+  background-size: cover;
+  background-repeat: no-repeat;
+  position:relative;
+}
+html{
+  background-image:url(https://media.istockphoto.com/photos/empty-green-casino-poker-table-cloth-with-spotlight-picture-id1092139474?k=20&m=1092139474&s=612x612&w=0&h=iWwvolq21sBzJZkqmigkdwNW6_cuQ1pQSNQmBE0a4V0=);
+  background-size:100%;
+}
+p{
+  color:yellow;
+  margin:0;
+  font-size:25px;
+  text-transform: uppercase;
+}
+.display-block{
+  display:block;
+}
+.overlay{
+  width:100vw;
+  height:100vh;
+  background:black;
+  opacity:0.5;
+  display:none;
+  position:absolute;
+  
+}
+.slide{
+  position:absolute;
+  width:100%;
+  height:100vh;
+  z-index:100;
+}
+
+@media (max-width:700px){
+  .opponents-slide{
+    .opponents{
+      flex-direction:column;
+      justify-content:center;
+    }
+  }
+}
+.enemy_cards_container{
+  display:none;
+}
+
+@media (max-width:700px){
+
+  .end-game-popup{
+    .title{
+      svg,img{
+        display:none;
+      }
+    }
+    .press_F5-container{
+      margin-top:15px;
+    }
+  }
+  .lights_out_container{
+      .pulsing_lights_out_button{
+        animation-name:pulsing_lights_out_button_mobile;
+        animation-duration:0.5s;
+        animation-iteration-count: infinite;
+        animation-direction:alternate;
+      }
+  }
+}

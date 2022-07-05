@@ -1,0 +1,25 @@
+.play_field_container{
+  height: 60%;
+  width: 100%;
+  display: flex;
+  flex-wrap:wrap;
+  justify-content:center;
+  align-items:center;
+  margin-bottom:5%;
+  .play_cards_set{
+    position:relative;
+    margin-right:5px;
+    margin-bottom:1px;
+    .to-beated-card{
+      position:absolute;
+      position: absolute;
+      left: 0px;
+      transform: translateY(-125%);
+      display:none;
+    }
+    img{
+      width: 6vw;
+      height: 7vw;
+    }
+  }
+}

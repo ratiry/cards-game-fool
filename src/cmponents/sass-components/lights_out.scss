@@ -1,0 +1,61 @@
+.lights_out_container{
+  position:relative;
+  flex-basis:20%;
+  display:flex;
+  flex-direction:column;
+  justify-content:space-between;
+  .pulsing_lights_out_button{
+    animation-name:pulsing_lights_out_button_animation;
+    animation-duration:0.5s;
+    animation-iteration-count: infinite;
+    animation-direction:alternate;
+  }
+  .lights_out_container_inner{
+    position:relative;
+    display:flex;
+    margin-top:95px;
+    img{
+      height: 10vw;
+      margin-right: -6.5vw;
+    }
+  }
+  .lights_out_wrapper{
+    align-self: center;
+    margin-bottom:80px;
+    transform-origin: 50%;
+
+    button{
+      display:none;
+      text-transform:uppercase;
+      background: yellow;
+      color: black;
+      font-weight: bold;
+      border-radius: 26px;
+      width:120px ;
+      max-width:20vw;
+      padding:10px;
+      font-size:15px;
+      transition:all 0.2s linear;
+      &:hover{
+        transform:scale(1.2);
+      }
+    }
+  }
+}
+
+@keyframes pulsing_lights_out_button_animation{
+  0%{
+    transform:scale(1);
+  }
+  100%{
+    transform:scale(1.2);
+  }
+}
+@keyframes pulsing_lights_out_button_mobile {
+  0%{
+    transform:scale(1);
+  }
+  100%{
+    transform:scale(0.8);
+  }
+}

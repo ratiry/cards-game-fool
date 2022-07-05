@@ -1,0 +1,53 @@
+.welcoming-slide{
+  display:none;
+  z-index:100;
+  flex-direction: column;
+  position:absolute;
+  transform: translateX(-50%) translateY(-50%);
+  left:50%;
+  top:50%;
+  justify-content:space-around;
+  height:10%;
+  align-items:center;
+  .starter-button-container button{
+    border-radius: 30px;
+    padding: 10px;
+    background: lightgreen;
+    font-weight: bold;
+    text-transform: uppercase;
+    transform: scale(1.5);
+  }
+  .leadership-button-container{
+    button{
+      border: none;
+      background: none;
+      width:200px;
+      .leaderboard-inner{
+        background: gold;
+        padding: 11px;
+        transition:all 0.4s linear;
+        span{
+          text-transform: uppercase;
+          font-weight: bold;
+          font-size:24px;
+        }
+      }
+      svg{
+        path{
+          fill:silver;
+          transition:all 0.5s linear;
+        }
+      }
+      &:hover{
+        svg{
+          path{
+            fill:gold;
+          }
+        }
+        .leaderboard-inner{
+          background:silver;
+        }
+      }
+    }
+  }
+}

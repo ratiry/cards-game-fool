@@ -1,0 +1,53 @@
+
+@import './play_field.scss';
+
+  .playing_cards_container{
+    flex-basis:60%;
+    display:flex;
+    flex-direction:column;
+    justify-content:space-between;
+    align-items:center;
+    .playing_cards{
+      height:20%;
+      display:flex;
+      justify-content: center;
+      width:auto;
+      overflow:scroll;
+      flex-wrap: wrap;
+      &.enemy_cards_filler{
+        img{
+          margin-right:0.3vw;
+        }
+      }
+      &::-webkit-scrollbar{
+        height:0;
+        background:yellow;
+        border-radius: 30px;
+        &-thumb{
+          background:black;
+        }
+      }
+      &.noscroll{
+        overflow:hidden !important;
+      }
+      
+      img{
+        height:100%;
+      }
+    }
+    .my_cards_container{
+      .my_card_button{
+        width:auto;
+        height:100%;
+        background:0;
+        border:0;
+        padding:0;
+        display:block;
+        position:relative;
+        // margin-left:-30px;
+        img{
+          height:98% !important;
+        }
+      }
+    }
+  }

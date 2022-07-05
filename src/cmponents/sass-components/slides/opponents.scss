@@ -1,0 +1,66 @@
+.opponents-slide{
+  display:none;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-direction:column;
+  .back-to-main{
+    position: absolute;
+    transform: scale(6.5);
+    top: 5vh;
+    left: 10vw;
+    background:none;
+    border:none;
+    &:hover{
+      svg{
+        path{
+          
+          fill:orange;
+        }
+      }
+    }
+    svg{
+      width:10px;
+      transform:rotate(-90deg);
+      path{
+        transition:all 0.5s linear;
+        fill:yellow;
+      }
+    }
+  }
+  .opponents-slide-inner{
+    width:inherit;
+    p{
+      text-align:center;
+    }
+    .back-to-main{
+      border:none;
+      background:none;
+      transform: scale(5.5);
+      left: 10vw;
+      top: 10vh;
+    }
+    .opponents{
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      width:inherit;
+      button{
+        width: 180px;
+        height:45px;
+        font-size:25px;
+        text-transform: uppercase;
+        font-weight: bold;
+      }
+      & div:first-child button{
+        background: lightgreen;
+      }
+      & div:last-child button{
+        background:red;
+        color:yellow;
+      }
+      & div:nth-child(2) button{
+        background:yellow;
+      }   
+    }
+  }
+}

@@ -1,0 +1,31 @@
+html.end-game.enemys-victory{
+  .end-game-popup.defeat{
+    transform:scale(1) translateY(-50%) translateX(-50%);
+    visibility:visible;
+    opacity:1;
+  }
+}
+html.end-game.my-victory{
+  .end-game-popup.victory{
+    transform:scale(1) translateY(-50%) translateX(-50%);
+    visibility:visible;
+    opacity:1;
+  }
+}
+html.end-game{
+  overflow: hidden;
+.overlay{
+  display:block;
+}
+}
+html.start-game{
+  .overlay{
+    display:block;
+    background-image:url('https://media.istockphoto.com/vectors/seamless-pattern-with-playing-card-suits-on-green-background-vector-id696973922?k=20&m=696973922&s=612x612&w=0&h=b-E6w7KobibLFtHvvSqQQQy8hK14VM-c-YkHY4zVjF4=');
+    background-size:cover;
+    opacity:1;
+  }
+  .welcoming-slide{
+    display:flex;
+  }
+}
